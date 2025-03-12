@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <title>Tes task</title>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="Искать на Glotr">
+    </div>
+    <div class="breadcrumb">
+      <a href="#">Главная</a> &gt; <a href="#">Товары</a> &gt; <a href="#">Красота и здоровье</a>
+    </div>
+  </div>
+  <div class="product-main">
+    <div class="product-image">
+      <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+      <img src="./images/3.png" alt="Apple Macbook air, M1, 512 SSD gb, 32gb RAM">
+    </div>
+    <div class="product-info">
+      <h1 class="product-title">Apple Macbook air, M1, 512 SSD gb, 32gb RAM</h1>
+      <div class="product-avia">
+        <p class="product-availability">Нет в наличии</p>
+        <p class="product-code">Код 32453</p>
+      </div>
+      <p class="product-price">12 850 000 <span class="product-price-title">сум/шт</span></p>
+      <div class="product-button">
+        <button class="check-availability" onclick="openModal()">Уточнить наличие</button>
+        <button class="message-btn"><i class="fa-regular fa-message"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="tabs">
+    <div class="tab active">Описание</div>
+    <div class="tab">Характеристика</div>
+    <div class="tab">Продавец</div>
+    <div class="tab">Отзывы</div>
+  </div>
+  <div class="product-section">
+    <h2 class="section-title">Описание</h2>
+    <p class="product-description">
+      Оптический привод С новой силой. С появлением чипа Apple M1 наш самый тонкий и лёгкий ноутбук полностью
+      преобразился. Центральный процессор теперь работает до 3,5 раза быстрее. Графический до 5 раз. А благодаря нашей
+      передовой системе Neural Engine скорость машинного обучения возросла до 9 раз. Новый Мас. Book Air работает без
+      подзарядки дольше, чем предыдущие модели.
+    </p>
+    <span class="show-more">Показать все <i class="fa-solid fa-chevron-down"></i></span>
+  </div>
+  <div class="product-section">
+    <h2 class="section-title">Характеристики</h2>
+    <div class="specifications">
+      <div class="spec-row">
+        <div class="spec-name">Код товара</div>
+        <div class="spec-value">MGN93RU/A</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Производитель</div>
+        <div class="spec-value">Apple</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Разрешение экрана</div>
+        <div class="spec-value">2560x1600</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Количество ядер процессора</div>
+        <div class="spec-value">8</div>
+      </div>
+      <div class="spec-row">
+        <div class="spec-name">Оптический привод</div>
+        <div class="spec-value">Отсутствует</div>
+      </div>
+    </div>
+    <span class="show-more">Показать все <i class="fa-solid fa-chevron-down"></i></span>
+  </div>
+  <div class="product-section">
+    <h2 class="section-title">Способы оплаты</h2>
+    <div class="payment-methods">
+      <div class="method-item">Наличными</div>
+      <div class="method-item">Перечислением</div>
+      <div class="method-item">Терминал UzCard</div>
+      <div class="method-item">Терминал НИМО</div>
+      <div class="method-item">POS терминал</div>
+      <div class="method-item">Payme</div>
+    </div>
+    <button class="details-link">Подробно <i class="fa-solid fa-chevron-down"></i></button>
+    <h2 class="section-title">Способы доставки</h2>
+    <div class="delivery-methods">
+      <div class="method-item">Доставка куръером</div>
+      <div class="method-item">Доставка почтой</div>
+    </div>
+    <button class="details-link">Подробно <i class="fa-solid fa-chevron-down"></i></button>
+  </div>
+  <div class="product-section">
+    <h2 class="section-title">Продавец</h2>
+    <div class="seller-info">
+      <div class="seller-title">
+        <div class="seller-logo">
+          <img src="./images/4.png" alt="Logo">
+        </div>
+        <div>
+          <h3 class="seller-name">Amazon</h3>
+          <p class="seller-location">г. Ташкент, Узбекистан</p>
+        </div>
+      </div>
+      <div class="seller-details">
+        <div class="seller-contact">
+          <p class="seller-hours"><i class="fa-regular fa-clock seller-color"></i> Сегодня работает до 18:00 <span
+                  class="seller-color">Весь график</span></p>
+          <p class="seller-hours"><i class="fa-solid fa-phone-volume seller-color ic"></i> +998 99 ... <span
+                  class="seller-color">показать номер</span>
+          </p>
+          <p class="seller-hours"><i class="fa-solid fa-globe seller-color"></i> <span
+                  class="seller-color">amazon.com</span></p>
+          <div class="seller-btn-box">
+            <button>Все товары продавца</button>
+            <button class="seller-btn">Заказать звонок</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="product-section">
+    <h2 class="section-title"><span>Похожие товары продавца</span> <i class="fa-solid fa-chevron-right"></i></h2>
+    <div class="product-cards">
+      <div class="product-card">
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/2.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability">В наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="discount-badge">-15%</div>
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/1.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability">В наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/2.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability on-order">Под заказ</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="discount-badge">-15%</div>
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/1.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability out-of-stock">Нет в наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+    </div>
+  </div>
+  <div class="product-section">
+    <h2 class="section-title"><span>Рекомендуем</span> <i class="fa-solid fa-chevron-right"></i></h2>
+    <div class="product-cards">
+      <div class="product-card">
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/2.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability">В наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/1.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability">В наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="discount-badge">-15%</div>
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/2.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability">В наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/1.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability on-order">Под заказ</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="discount-badge">-15%</div>
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/2.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability">В наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+      <div class="product-card">
+        <div class="like-icon"><i class="fa-regular fa-heart"></i></div>
+        <img src="./images/1.png" alt="Knife Sharpener Tool Professional" class="card-image">
+        <h3 class="card-title">Knife Sharpener Tool Professional</h3>
+        <p class="card-availability out-of-stock">Нет в наличии</p>
+        <p class="card-price">3 000 000 сум</p>
+        <p class="card-seller">Media Park</p>
+        <p class="card-location">г. Ташкент</p>
+      </div>
+    </div>
+  </div>
+  <div class="search-terms">
+    <h2 class="section-title"><span>У нас ищут</span> <i class="fa-solid fa-chevron-right"></i></h2>
+    <div class="search-terms-list">
+      <div class="search-term">Камера</div>
+      <div class="search-term">Куртки женские</div>
+      <div class="search-term">Радиаторы и обогреватели</div>
+      <div class="search-term">Автозапчасти</div>
+      <div class="search-term">Спортивные костюм</div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="modal-title">Подтвердите заказ</h2>
+        <button class="close-button" onclick="closeModal()">×</button>
+      </div>
+      <div class="modal-content confirmation-state" id="confirmationState">
+        <h3 class="confirmation-title">Код подтверждения</h3>
+        <p class="confirmation-text">
+          Для подтверждения заказа. Мы вам отправили код на ваш номер
+          <span class="phone-number">+998 90 909 90 90</span>
+        </p>
+        <input type="text" class="code-input" placeholder="Код">
+        <p class="timer">
+          Получить код повторно можно через:
+          <span class="timer-value">1:52</span>
+        </p>
+        <button class="button button-primary" onclick="showSuccessState()">Подтвердить заказ</button>
+        <button class="button button-secondary" onclick="closeModal()">Отменить</button>
+      </div>
+      <div class="modal-content success-state" id="successState">
+        <div class="company-header">
+          <div class="company-logo"><img src="./images/5.png" alt="Logo"></div>
+          <div class="company-info">
+            <div class="company-name">E-bidet Uzbekistan</div>
+            <div class="company-location">Ташкент, Шайхантахурский район</div>
+          </div>
+        </div>
+        <div class="success-message">
+          <div class="checkmark"></div>
+          <div class="order-details">
+            <div class="order-number">Номер заказа: 3957</div>
+            <div class="success-text">Ваш заказ успешно принят и передан на обработку продавцу.</div>
+          </div>
+        </div>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-regular fa-heart"></i></div>
+            <div class="info-label">Компания</div>
+            <div class="info-value">E-bidet Uzbekistan</div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-label">Адрес</div>
+            <div class="info-value">г.Ташкент, ул. Саларская 35 В две строки</div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-regular fa-clock"></i></div>
+            <div class="info-label">График работы</div>
+            <div class="info-value"><a href="#">Посмотреть</a></div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone-volume ic"></i></div>
+            <div class="info-label">Номер телефона</div>
+            <div class="info-value">+998 90 900 90 90</div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="info-label">Сайт</div>
+            <div class="info-value"><a href="#">wellblue.gl.uz</a></div>
+          </div>
+        </div>
+        <button class="button all-products-button" onclick="closeModal()">Все товары продавца</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
