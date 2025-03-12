@@ -89,13 +89,13 @@ body {
 .product-avia {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
+  margin-bottom: 10px;
 }
 
 .product-availability {
   color: #e74c3c;
-  margin-bottom: 10px;
   font-weight: 500;
   background-color: #F242361A;
   border-radius: 6px;
@@ -104,7 +104,6 @@ body {
 
 .product-code {
   color: #777;
-  margin-bottom: 15px;
 }
 
 .product-price {
